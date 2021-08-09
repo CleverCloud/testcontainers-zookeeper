@@ -59,6 +59,19 @@ publishing {
                 name.set("testcontainers-zookeeper")
                 description.set("This project provide an Apache ZooKeeper implementation for testcontainers")
                 url.set("https://github.com/CleverCloud/testcontainers-zookeeper")
+                licenses {
+                    license {
+                        name.set("MIT license")
+                        url.set("https://raw.githubusercontent.com/CleverCloud/testcontainers-zookeeper/main/LICENSE")
+                    }
+                }
+                developers {
+                    developer {
+                        id.set("FlorentinDUBOIS")
+                        name.set("Florentin Dubois")
+                        email.set("florentin.dubois@clever-cloud")
+                    }
+                }
                 scm {
                     connection.set("scm:git:https://git@github.com/CleverCloud/testcontainers-zookeeper.git")
                     developerConnection.set("scm:git:git@github.com:CleverCloud/testcontainers-zookeeper.git")
