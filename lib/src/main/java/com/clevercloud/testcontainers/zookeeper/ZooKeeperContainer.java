@@ -20,7 +20,7 @@ public class ZooKeeperContainer extends GenericContainer<ZooKeeperContainer> {
     public static final Integer DEFAULT_FOLLOWER_PORT = 2888;
     public static final Integer DEFAULT_ELECTION_PORT = 3888;
     public static final Integer DEFAULT_ADMIN_PORT = 8080;
-    public static final Duration DEFAULT_STARTUP_TIMEOUT = Duration.ofSeconds(15);
+    public static final Duration DEFAULT_STARTUP_TIMEOUT = Duration.ofSeconds(60);
 
     public ZooKeeperContainer() {
         this(DEFAULT_IMAGE_NAME, DEFAULT_STARTUP_TIMEOUT);
