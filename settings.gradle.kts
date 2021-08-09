@@ -8,4 +8,5 @@
  */
 
 rootProject.name = "testcontainers-zookeeper"
+
 include("lib")

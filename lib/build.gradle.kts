@@ -11,6 +11,13 @@ plugins {
     `java-library`
 }
 
+version = "0.1.0"
+
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -19,8 +26,6 @@ repositories {
 val junitVersion = "5.4.2"
 val testContainersVersion = "1.15.3"
 val zooKeeperVersion = "3.7.0"
-
-val version = "0.1.0"
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
@@ -32,4 +37,11 @@ dependencies {
     testImplementation("org.apache.zookeeper:zookeeper:$zooKeeperVersion")
 
     implementation("org.testcontainers:testcontainers:$testContainersVersion")
+}
+
+tasks.jar {
+    manifest {
+        attributes(mapOf("Implementation-Title" to project.name,
+                "Implementation-Version" to project.version))
+    }
 }
