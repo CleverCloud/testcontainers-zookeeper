@@ -19,7 +19,7 @@ public class ZooKeeperContainerTest {
         container.start();
 
         final CountDownLatch connectionLatch = new CountDownLatch(1);
-        final ZooKeeper zk = new ZooKeeper(container.getHost(), container.getMappedPort(ZooKeeperContainer.DEFAULT_CLIENT_PORT), event -> {
+        final ZooKeeper zk = new ZooKeeper(container.getHost() + ":" + container.getMappedPort(ZooKeeperContainer.DEFAULT_CLIENT_PORT), 5000, event -> {
             if (event.getState() == Watcher.Event.KeeperState.SyncConnected) {
                 connectionLatch.countDown();
             }

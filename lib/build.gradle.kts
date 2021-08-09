@@ -27,6 +27,7 @@ dependencies {
     testImplementation("org.testcontainers:testcontainers:$testContainersVersion")
     testImplementation("org.testcontainers:junit-jupiter:$testContainersVersion")
     testImplementation("org.apache.zookeeper:zookeeper:$zooKeeperVersion")
+    testImplementation("org.slf4j:slf4j-simple:1.7.32")
 
     implementation("org.testcontainers:testcontainers:$testContainersVersion")
 }
