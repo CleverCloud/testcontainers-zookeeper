@@ -11,3 +11,9 @@ $ ./gradlew jar
 ```
 
 The library java archive will be located in the `lib/build/libs` folder.
+
+## Usage
+
+You can take a look to
+the [ZooKeeperContainerTest](lib/src/test/java/com/clevercloud/testcontainers/zookeeper/ZooKeeperContainerTest.java)
+file to have an example of how to use it.
