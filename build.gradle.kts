@@ -69,7 +69,7 @@ publishing {
                     developer {
                         id.set("FlorentinDUBOIS")
                         name.set("Florentin Dubois")
-                        email.set("florentin.dubois@clever-cloud")
+                        email.set("florentin.dubois@clever-cloud.com")
                     }
                 }
                 scm {
