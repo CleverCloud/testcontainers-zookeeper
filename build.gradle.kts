@@ -4,7 +4,7 @@ plugins {
     `maven-publish`
     signing
     id("io.github.gradle-nexus.publish-plugin") version "1.1.0"
-    id("com.github.ben-manes.versions") version "0.39.0"
+    id("com.github.ben-manes.versions") version "0.41.0"
 }
 
 group = "com.clever-cloud"
@@ -20,10 +20,10 @@ repositories {
     mavenCentral()
 }
 
-val junitVersion = "5.8.0-M1"
-val testContainersVersion = "1.16.0"
+val junitVersion = "5.8.2"
+val testContainersVersion = "1.16.2"
 val zooKeeperVersion = "3.7.0"
-val slf4jVersion = "2.0.0-alpha2"
+val slf4jVersion = "2.0.0-alpha5"
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
