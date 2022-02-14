@@ -21,9 +21,9 @@ repositories {
 }
 
 val junitVersion = "5.8.2"
-val testContainersVersion = "1.16.2"
+val testContainersVersion = "1.16.3"
 val zooKeeperVersion = "3.7.0"
-val slf4jVersion = "2.0.0-alpha5"
+val slf4jVersion = "2.0.0-alpha6"
 
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
